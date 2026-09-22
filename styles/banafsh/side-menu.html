@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="styles/style.css"> 
+    <title>دسته بندی</title>
+  </head>
+  <body>
+    <header>
+      <a href="#side-menu" class="menu-icon"
+      ><img
+        src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+        alt="منو"
+    /></a>
+    <div id="side-menu" class="side-menu">
+      <a href="#header-top" class="close-menu"
+        ><img
+          src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="بستن"
+      /></a>
+
+      <a href="menu.html">
+        <img
+          src="images/fork_spoon_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="منو"
+        />
+        مشاهده منو</a
+      >
+      <a href="about.html">
+        <img
+          src="images/info_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="درباره ما"
+        />درباره ما</a
+      >
+      <a href="comments.html"
+        ><img
+          src="images/forum_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="نظرات"
+        />نظرات</a
+      >
+      <a href="#contact"
+        ><img
+          src="images/call_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="تماس"
+        />تماس با ما</a
+      >
+    </header>
+    
+  </body>
+</html>
+<style>
+  .side-menu{
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  transition: all 0.4s ease;  
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+}
+
+.side-menu:target{
+  right: 0;
+}
+
+
+
+
+
+.side-menu:target {
+  right: 0;
+}
+
+
+.side-menu a:not(.close-menu) {
+  text-decoration:none ;
+  color: #333; 
+  font-family: 'Vazir', sans-serif; 
+  font-size: 15px;
+  padding: 15px 20px;
+  margin: 5px 2px;
+
+  display: flex;
+  align-items: center; 
+  transition: all 0.3s ease; 
+ border-bottom: 1px solid black;
+}
+
+
+.side-menu a img, 
+.side-menu a .material-symbols-outlined {
+  margin-right: 15px; 
+  font-size: 24px;
+  color: #e67e22; 
+}
+
+.side-menu a:hover:not(.close-menu) {
+  background-color: #fff5eb; 
+  color: #e67e22;
+  padding-right: 30px;  
+}
+
+
+.close-menu {
+  align-self: flex-end;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+</style>

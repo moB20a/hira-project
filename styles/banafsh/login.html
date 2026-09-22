@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ثبت نام</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      body {
+        font-family: "Vazirmatn", Arial, Helvetica, sans-serif;
+        background-color: #eceff1;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+      }
+      .containerr {
+        background: white;
+        width: 100%;
+        max-width: 1100px;
+        padding: 30px;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .form-header {
+        text-align: center;
+        border-bottom: 2px solid #000;
+        margin-bottom: 20px;
+      }
+      form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .section {
+        border: 1px solid #000;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      .full-width {
+        grid-column: span 2;
+      }
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      label {
+        font-weight: bold;
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+      }
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        font-family: "Vazirmatn";
+      }
+      button[type="submit"] {
+        grid-column: span 2;
+        padding: 15px;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.1rem;
+      }
+      button[type="submit"]:hover {
+        background: #333;
+      }
+      @media (max-width: 850px) {
+        form {
+          grid-template-columns: 1fr;
+        }
+        .full-width,
+        button[type="submit"] {
+          grid-column: span 1;
+        }
+      }
+    </style>
+  </head>
+  <!-- <body>
+    <div class="containerr">
+      <div class="form-header">
+        <h1>فرم ثبت نام</h1>
+      </div>
+       مهم: action به صفحه دوم اشاره می‌کند -->
+  <!-- <form action="login.html">
+        <div class="section">
+          <h2>اطلاعات فردی</h2>
+          <div class="row">
+            <div class="input-box">
+              <label>نام</label><input type="text" required />
+            </div>
+            <div class="input-box">
+              <label>نام خانوادگی</label><input type="text" required />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-box">
+              <label>کدملی</label><input type="text" required />
+            </div>
+            <div class="input-box">
+              <label>شماره تماس</label><input type="text" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>تحصیلات</h2>
+          <div class="input-box"><label>رشته</label><input type="text" /></div>
+          <div class="input-box">
+            <label>مقطع</label>
+            <select>
+              <option>کارشناسی</option>
+              <option>ارشد</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section full-width">
+          <h2>توضیحات</h2>
+          <div class="input-box">
+            <textarea placeholder="توضیحات..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit">ثبت نام و ادامه</button>
+      </form>
+    </div>
+  </body> -->
+</html>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تایید حساب</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      body {
+        font-family: "Vazirmatn", sans-serif;
+        background-color: #eceff1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-card {
+        background: white;
+        width: 100%;
+        max-width: 400px;
+        padding: 40px;
+        border-radius: 12px;
+        border: 1px solid #000;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      h2 {
+        margin-bottom: 25px;
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+      }
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        text-align: right;
+      }
+      label {
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      input {
+        padding: 12px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        font-family: "Vazirmatn";
+        outline: none;
+      }
+      input:focus {
+        background-color: #fffdf0;
+        border-color: #007bff;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        background: #333;
+      }
+      .back-link {
+        margin-top: 15px;
+        display: block;
+        color: #666;
+        font-size: 0.8rem;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-card">
+      <h2>تایید حساب</h2>
+      <form action="#">
+        <div class="input-box">
+          <label>شماره موبایل</label>
+          <input type="text" placeholder="0912XXXXXXX" required />
+        </div>
+        <div class="input-box">
+          <label>رمز عبور</label>
+          <input type="password" placeholder="********" required />
+        </div>
+        <button type="submit">ثبت نهایی و ورود</button>
+        <a href="index.html" class="back-link">بازگشت به صفحه قبل</a>
+      </form>
+    </div>
+  </body>
+</html>

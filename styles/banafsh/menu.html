@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="./images/images.png" type="image/x-icon" />
+    <body>
+      <header>
+    <a href="#side-menu" class="menu-icon"
+        ><img
+          src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt="منو"
+      /></a>
+      <div id="side-menu" class="side-menu">
+        <a href="#header-top" class="close-menu"
+          ><img
+            src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+            alt="بستن"
+        /></a>
+  
+        <a href="menu.html">
+          <img
+            src="images/fork_spoon_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+            alt="منو"
+          />
+          مشاهده منو</a
+        >
+        <a href="about.html">
+          <img
+            src="images/info_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+            alt="درباره ما"
+          />درباره ما</a
+        >
+        <a href="comments.html"
+          ><img
+            src="images/forum_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+            alt="نظرات"
+          />نظرات</a
+        >
+        <a href="#contact"
+          ><img
+            src="images/call_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+            alt="تماس"
+          />تماس با ما</a
+        >
+      </header>
+      
+    </body>
+  </html>
+  <style>
+    .side-menu{
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    transition: all 0.4s ease;  
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  }
+  
+  .side-menu:target{
+    right: 0;
+  }
+  
+  
+  
+  
+  
+  .side-menu:target {
+    right: 0;
+  }
+  
+  
+  .side-menu a:not(.close-menu) {
+    text-decoration:none ;
+    color: #333; 
+    font-family: 'Vazir', sans-serif; 
+    font-size: 15px;
+    padding: 15px 20px;
+    margin: 5px 2px;
+  
+    display: flex;
+    align-items: center; 
+    transition: all 0.3s ease; 
+   border-bottom: 1px solid black;
+  }
+  
+  
+  .side-menu a img, 
+  .side-menu a .material-symbols-outlined {
+    margin-right: 15px; 
+    font-size: 24px;
+    color: #e67e22; 
+  }
+  
+  .side-menu a:hover:not(.close-menu) {
+    background-color: #fff5eb; 
+    color: #e67e22;
+    padding-right: 30px;  
+  }
+  
+  
+  .close-menu {
+    align-self: flex-end;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  
+  </style>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      body {
+        font-family: vazir, Arial, Helvetica, sans-serif;
+        background-color: #eae2e2;
+        color: black;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      .menu-categories{
+        
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 25px 15px;
+        direction: rtl;
+        position: fixed;
+    top: 20px;  
+      
+    right: 500px;   
+    z-index: 1000; 
+      }
+      .category-box{
+        width: 100px;
+        height: 90px;
+        background-color: aliceblue;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        transition: 0.3s;
+
+      }
+
+.category-box p{
+  margin: 7px 0 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.category-box:hover{
+  transform: translateY(-5px);
+  
+  
+}
+
+
+
+      @media only screen and(max-width:1100px) {
+        .container {
+          margin: auto;
+          padding: 40px 20px;
+        }
+      }
+
+       h1 {
+        background-color: rgb(189, 195, 204);
+        color: rgb(26, 24, 24);
+        width: fit-content;
+        padding: 10px 35px;
+        margin: 40px auto 25px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 28px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0/15);
+      } 
+      
+      /* .category-title {
+        background-color: white;
+        color: #222;
+        width: fit-content;
+        padding: 10px 35px;
+        margin: 40px auto 25px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 28px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      } */
+      .menu-items {
+       display: grid;
+       gap: 5px;
+       width: 100%;
+      }
+      .pizza-items{
+        display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin-top: 200px;
+column-gap: 5px;
+justify-content: start;
+      }
+      .fried-items{
+        grid-template-columns: 1fr 1fr 1fr;
+      
+      }
+      .sandwich-items{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .drink-items{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      
+      .menu-card {
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        width: 65%;
+        min-height: 400px;
+padding: 10px;
+margin: 5px auto;
+box-sizing: border-box;
+font-size: 28px;
+transition:all 0/8s ease;
+cursor: pointer;
+      }
+
+
+      .menu-card:hover{
+         transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0.0.0.0/25);
+        background-color: rgb(196, 179, 179);
+      }
+      .menu-card img {
+        width: 90%;
+        height: 280px;
+        display: block;
+        object-fit: cover;
+        margin: 10px auto 15px;
+        border-radius: 10px;
+        transition: 0/3s ease-in-out;
+    
+      }
+      .menu-card h3 {
+        font-size: 22px;
+        margin: 18px 10px 10px;
+        color: #222;
+      }
+      .price {
+        color: #e85d04;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 8px;
+      }
+      .details {
+        color: #555;
+        font-size: 15px;
+        line-height: 2;
+        padding: 0 18px 20px;
+      }
+
+      @media only screen and(max-width:800px) {
+        .menu-items {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media only screen and(max-width:550px) {
+        .menu-items {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-categories"onclick="location.href=`#pizza`">
+      <div class="category-box">
+        <img src="./images/icons8-pizza-48.png" alt="pizza">       
+<p>pizza</p>        
+      </div>
+|<div class="category-box" onclick="location.href=`#sandwich`"> 
+  <img src="./images/icons8-hot-dog-48.png" alt="hot-dog">
+<p>sandwich</p>  
+</div>
+<div class="category-box"onclick="location.href=`#fried-chicken`">
+  <img src="./images/icons8-poultry-leg-48.png" alt="fried-chicken">
+  <p>fried-chicken</p>
+</div>
+<div class="category-box"onclick="location.href=`#drink`"> 
+  <img src="./images/icons8-cup-with-straw-48.png" alt="drink">
+<p>drink</p>  
+</div>
+
+
+
+    </div>
+    <div class="container">
+      <!-- <h1>منو کامل فست فود هیرا</h1> -->
+      <!-- <h2 class="category-title">پیتزا</h2> -->
+      <div class="menu-items pizza-items">
+        <div class="menu-card">
+          <img src="./images/pproni.jpg" alt="پیتزا پپرونی" />
+          <h3>پیتزا پپرونی</h3>
+          <div class="price">600000 تومان</div>
+          <div class="details">
+            خمیر تازه,سس مخصوص, پنیر موزارلا, پپرونی,زیتون, فلفل هالوپینو
+          </div>
+        </div>
+    
+        <div class="menu-card">
+          <img src="images/tasvirezendegi-ir-718.jpg" alt="پیتزا گوشت و قارچ" />
+          <h3>پیتزا گوشت و قارچ</h3>
+          <div class="price">5400000 تومان</div>
+          <div class="details">
+            خمیر تازه,سس مخصوص,پنیر موزارلا,گوشت,قارچ,ژامبون
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="images/imagesp.jpg" alt="پیتزا چهار فصل" />
+          <h3>پیتزا چهار فصل</h3>
+          <div class="price">600000 تومان</div>
+          <div class="details">
+            خمیر تازه,سس مخصوص,پنیر موزارلا,پپرونی,گوشت و قارچ,مرغ و قارچ,ژامبون
+          </div>
+        </div>
+    </div>
+        <!-- sokhari -->
+        <h2 class="category-title" id="fried-chicken"></h2>
+        <div class="menu-items fried-items">
+        <div class="menu-card">
+          <img src="images/ss.png" alt=" فیله سوخاری 4 تیکه" />
+          <h3>فیله سوخاری 4 تیکه</h3>
+          <div class="price">540000 تومان</div>
+          <div class="details">فیله مرغ,سس مخصوص,سیب زمینی</div>
+        </div>
+        <div class="menu-card">
+          <img src="images/garch.jpg" alt="قارچ سوخاری  " />
+          <h3>قارچ سوخاری</h3>
+          <div class="price">500000 تومان</div>
+          <div class="details">نیم کیلو قارچ سوخاری,سس</div>
+        </div>
+        <div class="menu-card">
+          <img src="images/fremch.jpg" alt="سیب زمینی سوخاری  " />
+          <h3> french fries</h3>
+          <div class="price">500000 تومان</div>
+          <div class="details">نیم کیلو قارچ سوخاری,سس</div>
+        </div>
+    </div>
+        <!-- sandvich -->
+        <h2 class="category-title" id="sandwich"></h2>
+        <div class="menu-items sandwich-items">
+        <div class="menu-card">
+          <img src="images/images.bsnd.jpg" alt="بندری  " />
+          <h3>بندری</h3>
+          <div class="price">220000 تومان</div>
+          <div class="details">کوکتل,گوجه,خیارشور,کاهو</div>
+        </div>
+        <div class="menu-card">
+          <img src="images/images.jjj.jpg" alt="ژامبون گوشت  " />
+          <h3>ژامبون گوشت</h3>
+          <div class="price">تومان 230000</div>
+          <div class="details">ژامبون گوشت,گوجه,خیارشور,کاهو,سس مخصوص</div>
+        </div>
+        <div class="menu-card">
+          <img src="images/Untitled-1-79.jpg" alt="برگر   " />
+          <h3>برگر </h3>
+          <div class="price">تومان 230000</div>
+          <div class="details">ژامبون گوشت,گوجه,خیارشور,کاهو,سس مخصوص و پنیر گودا</div>
+        </div>
+    </div>
+        <!-- noshdani -->
+        <h2 class="category-title" id="drink"></h2>
+        <div class="menu-items drink-items">
+        <div class="menu-card">
+          <img src="images/hand-drawn-food-background-Top.jpg" alt="کوکاکولا" />
+          <h3>کوکاکولا</h3>
+          <div class="price">20000 تومان</div>
+          <div class="details"></div>
+        </div>
+        <div class="menu-card">
+          <img src="images/hand-drawn-food-background-Top.jpg" alt="اسپیرایت" />
+          <h3>اسپیرایت</h3>
+          <div class="price">20000 تومان</div>
+          <div class="details"></div>
+        </div>
+        <div class="menu-card">
+          <img src="images/hand-drawn-food-background-Top.jpg" alt="دوغ  " />
+          <h3>دوغ</h3>
+          <div class="price">20000 تومان</div>
+          <div class="details"></div>
+        </div>
+        <div class="menu-card">
+          <img src="images/hand-drawn-food-background-Top.jpg" alt="آب معدنی" />
+          <h3>آب معدنی</h3>
+          <div class="price">150000 تومان</div>
+          <div class="details"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

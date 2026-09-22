@@ -1,0 +1,57 @@
+{
+	"name": "css-ptbr",
+	"displayName": "CSS em pt-BR",
+	"description": "Escreva CSS em português do Brasil",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"version": "0.0.10",
+	"publisher": "rghiggi",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodolfoghi/css-ptbr.git"
+	},
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "css",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/aligns.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/animations.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/backgrounds.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/borders.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/colors.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "7d6765aa-084e-4711-9e51-59bfdfd2a07f",
+		"publisherId": "3abe7247-4f79-4121-9753-de64297ccda1",
+		"publisherDisplayName": "Rodolfo Ghiggi",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1785668869721,
+		"preRelease": false
+	}
+}

@@ -1,0 +1,77 @@
+{
+    "center": {
+        "body": "center;",
+        "description": "Define o alinhamento como centro.",
+        "prefix": "meio"
+    },
+    "color": {
+        "body": "color:",
+        "description": "Define a cor de primeiro plano de um texto.",
+        "prefix": "cor"
+    },
+    "display": {
+        "body": "display:",
+        "description": "Define o modo de exibição.",
+        "prefix": "exibição"
+    },
+    "font-family": {
+        "body": "font-family",
+        "description": "Define a família da fonte.",
+        "prefix": ["fonte família", "família-de-fonte"]
+    },
+    "font-size": {
+        "body": "font-size",
+        "description": "Define o tamanho da fonte.",
+        "prefix": ["fonte tamanho", "tamanho-da-fonte"]
+    },
+    "height": {
+        "body": "height:",
+        "description": "Define a altura.",
+        "prefix": "altura"
+    },
+    "letter-spacing": {
+        "body": "letter-spacing:",
+        "description": "Define o espaçamento entre letras.",
+        "prefix": ["espaço letras", "espaçamento-entre-letras"]
+    },
+    "line-height": {
+        "body": "line-height:",
+        "description": "Define a altura da linha.",
+        "prefix": ["linha altura", "altura-da-linha"]
+    },
+    "margin": {
+        "body": "margin:",
+        "description": "Define a margem.",
+        "prefix": "margem"
+    },
+    "padding": {
+        "body": "padding:",
+        "description": "Define o espaçamento interno.",
+        "prefix": ["espaço interno", "espaço-interno"]
+    },
+    "position": {
+        "body": "position:",
+        "description": "Define a posicão.",
+        "prefix": "posição"
+    },
+    "text-align": {
+        "body": "text-align:",
+        "description": "Define o alinhamento do texto.",
+        "prefix": ["texto alinhar", "alinhar-texto"]
+    },
+    "text-shadow": {
+        "body": "text-shadow:",
+        "description": "Define a sombra do texto.",
+        "prefix": ["texto sombra", "sombreamento-do-texto"]
+    },
+    "transition": {
+        "body": "transition:",
+        "description": "Define como acontecerá a transição.",
+        "prefix": "transição"
+    },
+    "width": {
+        "body": "width:",
+        "description": "Define a largura.",
+        "prefix": "largura"
+    }
+}
