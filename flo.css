@@ -1039,3 +1039,610 @@ footer {
     gap: 10px;
   }
 }
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1100px) {
+  .navbar {
+    right: 3%;
+    left: 3%;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  .hero {
+    gap: 40px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hero-card {
+    width: 380px;
+    height: 450px;
+  }
+
+  .card-top {
+    left: -25px;
+  }
+
+  .card-bottom {
+    right: -25px;
+  }
+
+  .about {
+    gap: 50px;
+  }
+
+  .contact-info {
+    gap: 20px;
+  }
+}
+
+/* ---------- TABLET / SMALL LAPTOP ---------- */
+
+@media (max-width: 900px) {
+  /* NAVBAR */
+
+  .navbar {
+    height: 68px;
+    padding: 0 18px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .reserve-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: auto;
+
+    padding-top: 150px;
+    padding-bottom: 90px;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 70px;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-card {
+    width: 360px;
+    height: 420px;
+  }
+
+  .card-top {
+    left: -35px;
+  }
+
+  .card-bottom {
+    right: -35px;
+  }
+
+  /* SPECIAL */
+
+  .special-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* MENU */
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+  /* ABOUT */
+
+  .about {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    text-align: center;
+  }
+
+  .about-image {
+    height: 450px;
+    max-width: 500px;
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .about-content {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  /* GALLERY */
+
+  .gallery-grid {
+    max-width: 700px;
+  }
+
+  /* CONTACT */
+
+  .contact {
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .contact > div:first-child {
+    max-width: 650px;
+  }
+
+  .contact-info {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+  /* BODY */
+
+  body {
+    width: 100%;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    top: 10px;
+
+    left: 3%;
+    right: 3%;
+
+    height: 62px;
+
+    padding: 0 14px;
+
+    border-radius: 18px;
+  }
+
+  .logo {
+    gap: 7px;
+  }
+
+  .logo > span {
+    width: 37px;
+    height: 37px;
+
+    font-size: 19px;
+  }
+
+  .logo strong {
+    font-size: 15px;
+  }
+
+  .logo small {
+    font-size: 7px;
+  }
+
+  .reserve-btn {
+    display: block;
+
+    padding: 9px 13px;
+
+    font-size: 11px;
+  }
+
+  /* HERO */
+
+  .hero {
+    padding: 125px 5% 70px;
+
+    gap: 55px;
+  }
+
+  .mini-title {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 12vw, 55px);
+
+    margin: 15px 0;
+  }
+
+  .hero p {
+    font-size: 13px;
+
+    line-height: 2;
+
+    max-width: 95%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+  }
+
+  .main-btn,
+  .second-btn {
+    width: 190px;
+
+    text-align: center;
+  }
+
+  /* HERO CARD */
+
+  .hero-card {
+    width: min(80vw, 300px);
+    height: 350px;
+
+    border-radius: 160px 160px 25px 25px;
+  }
+
+  .circle-decoration {
+    width: 230px;
+    height: 230px;
+  }
+
+  .coffee {
+    width: 140px;
+    height: 140px;
+
+    font-size: 65px;
+  }
+
+  .floating-card {
+    padding: 9px 12px;
+
+    font-size: 9px;
+  }
+
+  .card-top {
+    top: 65px;
+    left: -20px;
+  }
+
+  .card-bottom {
+    bottom: 60px;
+    right: -20px;
+  }
+
+  /* FLOWERS */
+
+  .flowers {
+    font-size: 45px;
+  }
+
+  .flower-one {
+    left: 0;
+  }
+
+  .flower-two {
+    left: 40%;
+  }
+
+  .flower-three {
+    right: 0;
+  }
+
+  /* SECTIONS */
+
+  section {
+    padding: 75px 5%;
+  }
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .section-title p {
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+
+  /* SPECIAL */
+
+  .special-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .special-card {
+    padding: 35px 25px;
+  }
+
+  /* MENU TABS */
+
+  .menu-tabs {
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 30px;
+  }
+
+  .tab {
+    padding: 9px 16px;
+
+    font-size: 12px;
+  }
+
+  /* MENU */
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    border-radius: 20px;
+  }
+
+  .menu-image {
+    width: 100%;
+    min-width: 0;
+
+    height: 180px;
+
+    border-radius: 18px;
+
+    font-size: 60px;
+  }
+
+  .menu-info {
+    padding: 5px 5px 10px;
+  }
+
+  .menu-info h3 {
+    font-size: 19px;
+  }
+
+  .menu-info p {
+    font-size: 12px;
+  }
+
+  .price {
+    margin-top: 12px;
+  }
+
+  /* ABOUT */
+
+  .about {
+    gap: 35px;
+  }
+
+  .about-image {
+    height: 380px;
+
+    border-radius: 190px 190px 25px 25px;
+  }
+
+  .about-flower {
+    font-size: 110px;
+  }
+
+  .about-content > span {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .about-content h2 {
+    font-size: 34px;
+
+    line-height: 1.4;
+  }
+
+  .about-content p {
+    font-size: 13px;
+
+    line-height: 2;
+  }
+
+  /* GALLERY */
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 170px 170px;
+
+    gap: 10px;
+  }
+
+  .gallery-box {
+    border-radius: 18px;
+
+    font-size: 50px;
+  }
+
+  .gallery-box.big {
+    grid-column: span 2;
+
+    grid-row: auto;
+  }
+
+  /* CONTACT */
+
+  .contact {
+    padding: 75px 7%;
+
+    gap: 40px;
+  }
+
+  .contact h2 {
+    font-size: 42px;
+  }
+
+  .contact > div:first-child p {
+    font-size: 13px;
+  }
+
+  .contact-info {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .contact-info > div {
+    width: 100%;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 25px 7%;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 10px;
+  }
+}
+
+/* ---------- VERY SMALL PHONES ---------- */
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .logo strong {
+    font-size: 13px;
+  }
+
+  .logo small {
+    display: none;
+  }
+
+  .reserve-btn {
+    padding: 8px 11px;
+
+    font-size: 10px;
+  }
+
+  .hero {
+    padding-top: 115px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+
+  .hero-card {
+    width: 250px;
+    height: 310px;
+  }
+
+  .circle-decoration {
+    width: 200px;
+    height: 200px;
+  }
+
+  .coffee {
+    width: 120px;
+    height: 120px;
+
+    font-size: 55px;
+  }
+
+  .floating-card {
+    font-size: 8px;
+  }
+
+  .card-top {
+    left: -15px;
+  }
+
+  .card-bottom {
+    right: -15px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .menu-image {
+    height: 150px;
+  }
+
+  .about-image {
+    height: 320px;
+  }
+
+  .about-content h2 {
+    font-size: 29px;
+  }
+
+  .gallery-grid {
+    grid-template-rows: 140px 140px;
+  }
+
+  .gallery-box {
+    font-size: 40px;
+  }
+
+  .modal-box {
+    width: 92%;
+
+    padding: 30px 20px;
+
+    border-radius: 22px;
+  }
+
+  .modal-box h2 {
+    font-size: 29px;
+  }
+}
