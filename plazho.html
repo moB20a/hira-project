@@ -1,0 +1,407 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="plazho.css" />
+    <title>Pelazho Coffee</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:wght@400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <a href="#home" class="logo">
+        PELAZHO
+        <span>COFFEE HOUSE</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home">خانه</a>
+        <a href="#menu">منو</a>
+        <a href="#story">داستان ما</a>
+        <a href="#gallery">گالری</a>
+        <a href="#contact">تماس</a>
+      </nav>
+
+      <button class="order-btn" onclick="openOrder()">سفارش آنلاین</button>
+
+      <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <span class="eyebrow"> SPECIALTY COFFEE </span>
+
+          <h1>
+            هر فنجان،
+            <br />
+            یک <em>داستان.</em>
+          </h1>
+
+          <p>
+            قهوه‌ای که با دقت انتخاب شده، آرام دم شده و برای لحظه‌های خوب شما
+            آماده است.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#menu" class="primary-btn"> مشاهده منو </a>
+
+            <a href="#story" class="text-btn">
+              درباره Pelazho
+              <span>←</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <span>EST. 2026</span>
+
+          <div class="scroll-line"></div>
+
+          <span>SCROLL TO EXPLORE</span>
+        </div>
+      </section>
+
+      <!-- ================= INTRO ================= -->
+
+      <section class="intro">
+        <div class="intro-label">
+          <span>01</span>
+          OUR PHILOSOPHY
+        </div>
+
+        <div class="intro-content">
+          <h2>
+            قهوه فقط یک نوشیدنی نیست؛
+            <span>یک لحظه است.</span>
+          </h2>
+
+          <p>
+            در Pelazho تلاش می‌کنیم ساده‌ترین چیزها را درست انجام دهیم؛ دانه‌ی
+            خوب، قهوه‌ی تازه، فضای آرام و آدم‌هایی که از بودن کنار هم لذت
+            می‌برند.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= MENU ================= -->
+
+      <section class="menu-section" id="menu">
+        <div class="section-heading">
+          <div>
+            <span class="section-number">02</span>
+            <span class="section-label">OUR MENU</span>
+          </div>
+
+          <h2>انتخاب <em>امروز</em></h2>
+
+          <p>ساده، تازه و با وسواس آماده شده.</p>
+        </div>
+
+        <!-- MENU FILTER -->
+
+        <div class="menu-filter">
+          <button class="filter-btn active" data-filter="all">همه</button>
+
+          <button class="filter-btn" data-filter="hot">قهوه گرم</button>
+
+          <button class="filter-btn" data-filter="cold">قهوه سرد</button>
+
+          <button class="filter-btn" data-filter="dessert">دسر</button>
+        </div>
+
+        <!-- MENU GRID -->
+
+        <div class="menu-grid">
+          <!-- ITEM -->
+
+          <article class="menu-card" data-category="hot">
+            <div class="menu-image">
+              <img src="img/espresso.jpg" alt="Espresso" />
+
+              <button class="add-btn" onclick="addToOrder('Espresso', 120)">
+                +
+              </button>
+            </div>
+
+            <div class="menu-card-info">
+              <div class="item-title">
+                <h3>اسپرسو</h3>
+
+                <span>120</span>
+              </div>
+
+              <p>Single origin espresso</p>
+            </div>
+          </article>
+
+          <!-- ITEM -->
+
+          <article class="menu-card" data-category="hot">
+            <div class="menu-image">
+              <img src="img/latte.jpg" alt="Latte" />
+
+              <button class="add-btn" onclick="addToOrder('لاته', 185)">
+                +
+              </button>
+            </div>
+
+            <div class="menu-card-info">
+              <div class="item-title">
+                <h3>لاته</h3>
+
+                <span>185</span>
+              </div>
+
+              <p>Espresso · Fresh milk</p>
+            </div>
+          </article>
+
+          <!-- ITEM -->
+
+          <article class="menu-card" data-category="hot">
+            <div class="menu-image">
+              <img src="img/cappuccino.jpg" alt="Cappuccino" />
+
+              <button class="add-btn" onclick="addToOrder('کاپوچینو', 195)">
+                +
+              </button>
+            </div>
+
+            <div class="menu-card-info">
+              <div class="item-title">
+                <h3>کاپوچینو</h3>
+
+                <span>195</span>
+              </div>
+
+              <p>Espresso · Milk foam</p>
+            </div>
+          </article>
+
+          <!-- ITEM -->
+
+          <article class="menu-card" data-category="cold">
+            <div class="menu-image">
+              <img src="img/iced-coffee.jpg" alt="Iced Coffee" />
+
+              <button class="add-btn" onclick="addToOrder('آیس لاته', 210)">
+                +
+              </button>
+            </div>
+
+            <div class="menu-card-info">
+              <div class="item-title">
+                <h3>آیس لاته</h3>
+
+                <span>210</span>
+              </div>
+
+              <p>Cold espresso · Milk · Ice</p>
+            </div>
+          </article>
+
+          <!-- ITEM -->
+
+          <article class="menu-card" data-category="cold">
+            <div class="menu-image">
+              <img src="img/iced-coffee.jpg" alt="Cold Brew" />
+
+              <button class="add-btn" onclick="addToOrder('کولد برو', 220)">
+                +
+              </button>
+            </div>
+
+            <div class="menu-card-info">
+              <div class="item-title">
+                <h3>کولد برو</h3>
+
+                <span>220</span>
+              </div>
+
+              <p>Slow brewed coffee</p>
+            </div>
+          </article>
+
+          <!-- ITEM -->
+
+          <article class="menu-card" data-category="dessert">
+            <div class="menu-image">
+              <img src="img/cheesecake.jpg" alt="Cheesecake" />
+
+              <button class="add-btn" onclick="addToOrder('چیزکیک', 240)">
+                +
+              </button>
+            </div>
+
+            <div class="menu-card-info">
+              <div class="item-title">
+                <h3>چیزکیک</h3>
+
+                <span>240</span>
+              </div>
+
+              <p>Homemade cheesecake</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= STORY ================= -->
+
+      <section class="story" id="story">
+        <div class="story-image">
+          <img src="img/cafe.jpg" alt="Pelazho Cafe" />
+
+          <div class="image-caption">PELAZHO / 2026</div>
+        </div>
+
+        <div class="story-content">
+          <span class="section-label"> 03 / OUR STORY </span>
+
+          <h2>
+            جایی برای
+            <em>آرام‌تر زندگی کردن.</em>
+          </h2>
+
+          <p>
+            Pelazho از یک ایده‌ی ساده شروع شد: ساختن جایی که آدم‌ها بتوانند چند
+            ساعت از سرعت روزمره فاصله بگیرند.
+          </p>
+
+          <p>جایی میان عطر قهوه، موسیقی آرام و گفت‌وگوهای طولانی.</p>
+
+          <a href="#contact" class="outline-btn"> ما را پیدا کن ← </a>
+        </div>
+      </section>
+
+      <!-- ================= GALLERY ================= -->
+
+      <section class="gallery" id="gallery">
+        <div class="section-heading">
+          <span class="section-label"> 04 / THE SPACE </span>
+
+          <h2>فضای <em>Pelazho</em></h2>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item large">
+            <img src="img/cafe.jpg" alt="Pelazho" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="img/latte.jpg" alt="Coffee" />
+          </div>
+
+          <div class="gallery-item">
+            <img src="img/espresso.jpg" alt="Espresso" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+
+      <section class="contact" id="contact">
+        <div class="contact-title">
+          <span class="section-label"> 05 / VISIT US </span>
+
+          <h2>
+            منتظرتیم،
+            <em>با یک فنجان قهوه.</em>
+          </h2>
+        </div>
+
+        <div class="contact-info">
+          <div>
+            <span>ADDRESS</span>
+            <p>آدرس کافه Pelazho</p>
+          </div>
+
+          <div>
+            <span>OPENING HOURS</span>
+            <p>هر روز / 09:00 — 23:00</p>
+          </div>
+
+          <div>
+            <span>INSTAGRAM</span>
+            <p>@pelazho</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= ORDER CART ================= -->
+
+    <div class="order-cart" id="orderCart">
+      <div class="cart-icon">
+        🛒
+        <span id="cartCount">0</span>
+      </div>
+
+      <div class="cart-text">
+        <small>سفارش شما</small>
+
+        <strong>
+          <span id="cartTotal">0</span>
+          هزار تومان
+        </strong>
+      </div>
+
+      <button onclick="showOrder()">مشاهده</button>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Order Modal -->
+    <div class="order-overlay" id="orderOverlay" onclick="closeOrder(event)">
+      <div class="order-modal" onclick="event.stopPropagation()">
+        <button class="close-order" onclick="closeOrder()">×</button>
+
+        <h2>سفارش شما</h2>
+        <p class="order-subtitle">انتخاب‌های خوشمزه‌ات رو اینجا ببین ☕</p>
+
+        <div id="orderItems" class="order-items">
+          <p class="empty-order">هنوز چیزی انتخاب نکردی.</p>
+        </div>
+
+        <div class="order-bottom">
+          <div class="total-row">
+            <span>مجموع</span>
+            <strong id="orderTotal">۰ تومان</strong>
+          </div>
+
+          <button class="submit-order" onclick="submitOrder()">
+            ثبت سفارش
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-logo">PELAZHO</div>
+
+      <p>Coffee · People · Moments</p>
+
+      <span> © 2026 Pelazho Coffee </span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+```
